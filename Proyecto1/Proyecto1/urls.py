@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Proyecto1.views import saludo #para acceder a la vista hay que importar el modulo(Proyecto1) y el metodo(views.py)
+from Proyecto1.views import * #saludo, segunda_vista #para acceder a la vista hay que importar el modulo(Proyecto1) y el metodo(views.py)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("bienvenida/", saludo),
+    path("saludo/", saludo),
+    path("segundavista/", segunda_vista),
+    path("diaDeHoy/", diaDeHoy,),
+    path("miNombreEs/<nombre>", miNombreEs)
 ]
