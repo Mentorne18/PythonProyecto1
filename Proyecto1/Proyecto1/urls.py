@@ -23,5 +23,6 @@ urlpatterns = [
     path("saludo/", saludo),
     path("segundavista/", segunda_vista),
     path("diaDeHoy/", diaDeHoy,),
-    path("miNombreEs/<nombre>", miNombreEs)
+    path("miNombreEs/<nombre>", miNombreEs),
+    path("probandoTemplate/", probandoTemplate),
 ]

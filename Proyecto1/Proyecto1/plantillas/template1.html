@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Excelente, no es tan dificil usar planitllas. Es cuestion de seguir algunos pasos.
+
+    <p style = "color: red">Mi nombre es: {{nombre}}</p>
+    <p style = "color: green">Mi apellido es: {{apellido}}</p>
+
+    <h1>Este template fue creado el: {{fecha}}</h1>
+
+    <h3>Notas Coder:</h3>
+    <p>
+    {% for n in notas %}
+        {% if n < 7 %}
+            <p style = "color:red">Desaprobaste: {{n}}<br></p>
+        {% else %}
+            <p style = "color:green">Aprobaste: {{n}}<br></p>
+            
+            {% endif %}
+
+
+
+    {% endfor %}
+    
+    </p>
+    
+</body>
+</html> 
